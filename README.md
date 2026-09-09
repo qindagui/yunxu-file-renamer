@@ -33,6 +33,19 @@
 - 使用说明：`terms.html`
 - 样式：`assets/style.css`
 
+
+## 页面截图
+
+产品主页已加入《终稿20260814.docx》中的 5 张配图，放在 `assets/screenshots/`：
+
+- `01-problem-files.png`：网络表单下载后的文件名示例
+- `02-excel-mapping-source.png`：Excel 中姓名与原文件名的对应关系
+- `03-excel-mode.png`：按 Excel 映射改名界面
+- `04-rule-mode.png`：按命名规则改名界面
+- `05-property-mode.png`：按文件属性改名界面
+
+图片在网页中均可点击查看原图。前两张属于使用场景示例，已沿用文档中做过模糊处理的版本；以后若更新截图，建议继续避免展示真实学生姓名、证件号码、完整本地路径等敏感信息。
+
 ## Microsoft Store 上架填写
 
 在 Partner Center 的“属性”页：

@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="云序文件批量改名工具：支持 Excel 映射、命名规则、文件属性三种模式的离线 Windows 批量改名工具。">
+  <meta name="theme-color" content="#0f9f8d">
   <title>云序文件批量改名工具</title>
   <link rel="icon" href="assets/store-logo.png">
   <link rel="stylesheet" href="assets/style.css">
@@ -12,9 +13,12 @@
 <header class="topbar">
   <div class="wrap nav">
     <a class="brand" href="index.html"><img src="assets/store-logo.png" alt="云序文件批量改名工具图标"><span>云序文件批量改名工具</span></a>
-    <nav class="links" aria-label="主导航"><a href="#features">功能</a><a href="privacy.html">隐私政策</a><a href="support.html">支持</a><a href="terms.html">使用说明与责任提示</a></nav>
+    <nav class="links" aria-label="主导航">
+      <a href="#story">为什么做</a><a href="#features">三种用法</a><a href="#privacy">本机处理</a><a href="privacy.html">隐私政策</a><a href="support.html">支持</a>
+    </nav>
   </div>
 </header>
+
 <main>
   <section class="hero">
     <div class="wrap hero-grid">
@@ -23,41 +27,106 @@
         <h1>云序文件批量改名工具</h1>
         <p class="lead">一个专注于批量整理文件名的轻量 Windows 工具。支持按 Excel 映射、按命名规则、按文件属性三种方式批量改名。</p>
         <div class="slogan">用三种用法，应付最常见的改名。</div>
-        <div class="badges"><span class="badge">无需账号</span><span class="badge">不主动联网</span><span class="badge">不上传待处理文件</span><span class="badge">x86 / x64</span></div>
+        <div class="badges"><span class="badge">无需账号</span><span class="badge">不主动联网</span><span class="badge">不上传待处理文件</span><span class="badge">Excel / 照片 / 音乐 / 视频</span></div>
+        <div class="hero-actions"><a class="button primary" href="#features">看三种用法</a><a class="button" href="privacy.html">查看隐私政策</a></div>
       </div>
       <aside class="hero-card">
         <img src="assets/store-logo.png" alt="应用图标">
-        <h3>三步完成</h3>
-        <p>复杂逻辑留在软件内部，用户只需要按统一流程完成任务。</p>
+        <h3>统一三步</h3>
+        <p>添加文件 → 设置命名方式 → 检查预览并执行。</p>
         <p class="meta">作者：覃达贵 · 云序项目</p>
       </aside>
     </div>
   </section>
 
+  <section id="story" class="section-soft">
+    <div class="wrap">
+      <div class="section-kicker">它是怎么来的</div>
+      <h2>从一堆五花八门的学生照片文件名开始</h2>
+      <p class="section-intro">最初只是一个很具体的需求：网络表单收来的学生证件照，下载后文件名乱七八糟；做校卡要“班级+姓名”，办学籍又可能需要身份证号。照片已经收了一次，不应该因为命名要求不同再让学生重复提交。</p>
+
+      <div class="story-grid">
+        <figure class="shot-card compact-shot">
+          <a href="assets/screenshots/01-problem-files.png" target="_blank" rel="noopener"><img src="assets/screenshots/01-problem-files.png" alt="网络表单下载后的学生照片文件名示例，姓名等信息已做模糊处理" loading="lazy"></a>
+          <figcaption><strong>图 1：文件名五花八门。</strong><br>网络表单把照片收齐了，但下载下来后仍要逐个整理文件名。</figcaption>
+        </figure>
+        <figure class="shot-card compact-shot narrow-shot">
+          <a href="assets/screenshots/02-excel-mapping-source.png" target="_blank" rel="noopener"><img src="assets/screenshots/02-excel-mapping-source.png" alt="Excel 中姓名和原照片文件名的对应关系，个人信息已做模糊处理" loading="lazy"></a>
+          <figcaption><strong>图 2：Excel 其实已经有对应关系。</strong><br>名单里已有姓名与原照片文件名，最适合让程序“对号入座”。</figcaption>
+        </figure>
+      </div>
+
+      <div class="origin-note">涉及学生照片、身份证号等信息时，我不希望把资料随意上传到互联网处理。所以最初做了“按 Excel 映射改名”，后来再根据实际需要加入“按命名规则改名”和“按文件属性改名”。</div>
+    </div>
+  </section>
+
   <section id="features">
     <div class="wrap">
-      <h2>三种工作模式</h2>
-      <div class="grid3">
-        <article class="card"><h3>按 Excel 映射改名</h3><p>我有一张 Excel，要对着它改。根据“原文件名”和表格字段的对应关系，组合生成新文件名，适合学生照片、人员资料、档案和批量名单类工作。</p></article>
-        <article class="card"><h3>按命名规则改名</h3><p>没有表格，就按规则批量套。支持前后缀、替换、正则、插入、删除、自动编号、日期、大小写、名称模板等规则，并可保存常用方案。</p></article>
-        <article class="card"><h3>按文件属性改名</h3><p>文件里的信息，本来就有，直接拿来命名。可以利用文件系统属性，以及照片、音频、视频元数据组成新文件名。</p></article>
-      </div>
+      <div class="section-kicker">三种工作模式</div>
+      <h2>不是功能堆砌，是三类经常碰到的情况</h2>
+      <p class="section-intro">每种模式都围绕同一个流程：先看清楚要改哪些文件，再决定新名字怎么生成，最后检查预览后执行。</p>
+
+      <article class="feature feature-left">
+        <div class="feature-copy">
+          <div class="feature-number">01</div>
+          <h3>我有一张 Excel，要对着它改</h3>
+          <p>Excel 里有“原文件名”这一列，工具拿着它去文件夹里找对应文件，再按指定的其他列拼出新名字。</p>
+          <p>同一批照片，做校卡可以是“班级+姓名”，做学籍可以换成身份证号，做档案时还可以再换一套，不必重新收集文件。</p>
+          <div class="mini-example"><span>适合</span> 学生照片、人员资料、证件照、档案、批量名单类工作</div>
+        </div>
+        <figure class="product-shot">
+          <a href="assets/screenshots/03-excel-mode.png" target="_blank" rel="noopener"><img src="assets/screenshots/03-excel-mode.png" alt="云序文件批量改名工具的按 Excel 映射改名界面" loading="lazy"></a>
+          <figcaption>图 3：按 Excel 对号入座——名单里是谁，就按那一行生成新文件名。点击图片可查看原图。</figcaption>
+        </figure>
+      </article>
+
+      <article class="feature feature-right">
+        <div class="feature-copy">
+          <div class="feature-number">02</div>
+          <h3>没有表格，就按规则批量套</h3>
+          <p>加前缀、加后缀、查找替换、删除文字、自动编号、日期、大小写、名称模板等规则都可以组合。</p>
+          <p>比如旅行照片可以从 <code>IMG_001.jpg</code> 变成 <code>桂林旅行_001.jpg</code>。常用规则还能保存成方案，下次直接选模板执行。</p>
+          <div class="mini-example"><span>适合</span> 活动照片、扫描件、合同、项目资料、日常工作文件</div>
+        </div>
+        <figure class="product-shot">
+          <a href="assets/screenshots/04-rule-mode.png" target="_blank" rel="noopener"><img src="assets/screenshots/04-rule-mode.png" alt="云序文件批量改名工具的按命名规则改名界面" loading="lazy"></a>
+          <figcaption>图 4：按规则批量改——前缀、替换、编号等规则可以叠着用。点击图片可查看原图。</figcaption>
+        </figure>
+      </article>
+
+      <article class="feature feature-left">
+        <div class="feature-copy">
+          <div class="feature-number">03</div>
+          <h3>文件里的信息，本来就有，直接拿来命名</h3>
+          <p>照片里有拍摄日期、相机型号、分辨率；MP3 里有歌手、专辑、曲名；视频也可以读取创建日期、时长、分辨率、帧率等信息。</p>
+          <p>这些信息不用另外做表，直接组合到新文件名里。例如老照片可以整理成日期+编号，音乐可以整理成“歌手-歌名”。</p>
+          <div class="mini-example"><span>适合</span> 摄影素材、老照片、音乐收藏、视频素材</div>
+        </div>
+        <figure class="product-shot">
+          <a href="assets/screenshots/05-property-mode.png" target="_blank" rel="noopener"><img src="assets/screenshots/05-property-mode.png" alt="云序文件批量改名工具的按文件属性改名界面" loading="lazy"></a>
+          <figcaption>图 5：按文件属性改名——照片、音乐、视频自带的信息都能拿来命名。点击图片可查看原图。</figcaption>
+        </figure>
+      </article>
     </div>
   </section>
 
-  <section>
+  <section class="section-soft">
     <div class="wrap">
       <h2>统一的三步工作流</h2>
-      <div class="stepbar"><div class="step">① 添加文件</div><div class="arrow">→</div><div class="step">② 设置命名方式</div><div class="arrow">→</div><div class="step">③ 核对并执行</div></div>
+      <div class="stepbar"><div class="step">① 添加文件</div><div class="arrow">→</div><div class="step">② 设置命名方式</div><div class="arrow">→</div><div class="step">③ 检查预览并执行</div></div>
+      <p class="meta workflow-note">复杂逻辑留在软件内部，尽量让三种模式保持相同的操作节奏。</p>
     </div>
   </section>
 
-  <section>
+  <section id="privacy">
     <div class="wrap">
       <h2>文件留在自己的电脑上处理</h2>
-      <div class="card">
-        <p>软件是 Windows 单机工具，不主动连接云服务，也不主动上传待处理文件、文件名、Excel 数据或媒体元数据。对于学生照片、证件资料、内部工作文件等内容，可以在自己的电脑上完成整理。</p>
+      <div class="privacy-grid">
+        <div class="card"><h3>本机读取</h3><p>软件读取用户主动选择的文件、Excel 映射内容以及照片/音频/视频元数据，用于生成和预览新文件名。</p></div>
+        <div class="card"><h3>不主动上传</h3><p>软件不主动连接云服务，不主动上传待处理文件、文件名、Excel 数据或媒体元数据。</p></div>
+        <div class="card"><h3>重要资料先预览</h3><p>建议先用少量文件测试并检查预览结果。默认推荐复制到指定目录后重命名，尽量保留原文件。</p></div>
       </div>
+      <p class="privacy-link"><a href="privacy.html">查看完整隐私政策 →</a></p>
     </div>
   </section>
 
@@ -67,6 +136,7 @@
     </div>
   </section>
 </main>
-<footer><div class="wrap">© 2026 覃达贵 · 云序项目　<a href="privacy.html">隐私政策</a>　<a href="support.html">联系与支持</a></div></footer>
+
+<footer><div class="wrap">© 2026 覃达贵 · 云序项目　<a href="privacy.html">隐私政策</a>　<a href="support.html">联系与支持</a>　<a href="terms.html">使用说明与责任提示</a></div></footer>
 </body>
 </html>
